@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: indianred;
 }
 
 nav {
@@ -13,6 +14,7 @@ nav {
 
 
 main {
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -23,11 +25,10 @@ main {
 .item {
     margin: 0px;
     padding: 0px;
-    border: 1px solid grey;
 }
 
 .item:hover {
-    background-color: red;
+    background-color: rgb(235, 235, 235);
 }
 
 .colored {

@@ -35,13 +35,16 @@ button8.addEventListener('click', (e) => {
     rainbow = true;
 })
 
+//create a grid by default
+createGrid(16)
+
 function createGrid(value) {
     deleteGrid()
     for (let i = 0; i <= value - 1; i++) {
         for (let j = 0; j <= value - 1; j++) {
             let item = document.createElement('div')
             item.classList.add('item')
-            item.setAttribute('style', `width: ${(512 - ((value * 2))) / value}px; height: ${(512 - ((value * 2))) / value}px`)
+            item.setAttribute('style', `width: ${(512 - ((value * 2))) / value + 2}px; height: ${(512 - ((value * 2))) / value + 2}px`)
             main.appendChild(item)
         }
     }
