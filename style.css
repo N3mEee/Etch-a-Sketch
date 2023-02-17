@@ -12,7 +12,6 @@ nav {
     justify-content: center;
 }
 
-
 main {
     background-color: white;
     display: flex;
@@ -29,8 +28,4 @@ main {
 
 .item:hover {
     background-color: rgb(235, 235, 235);
-}
-
-.colored {
-    background-color: black;
 }

@@ -92,11 +92,7 @@ function changeItemColor(item) {
     if (rainbow) {
         item.style.backgroundColor = `rgb(${getRandomRGB()})`;
     } else {
-        if (item.classList.contains("colored")) {
-            item.classList.remove("colored");
-        } else {
-            item.classList.add("colored");
-        }
+        item.style.backgroundColor = color.value;
     }
 }
 
