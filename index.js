@@ -72,15 +72,9 @@ function createGrid(value) {
 }
 
 function clearGrid() {
-    if (rainbow) {
-        main.childNodes.forEach((item) => {
-            item.style.backgroundColor = ``;
-        });
-    } else {
-        main.childNodes.forEach((item) => {
-            item.classList.remove("colored");
-        });
-    }
+    main.childNodes.forEach((item) => {
+        item.style.backgroundColor = "";
+    });
 }
 
 function deleteGrid() {
